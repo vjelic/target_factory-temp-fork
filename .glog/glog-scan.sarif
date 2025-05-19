@@ -1,0 +1,344 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-8d4df7c8-545f-4ef1-ba23-5f41472b37bf",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Prohibited C Function Identified\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflow, leading to arbitrary code execution, denial of service, or information disclosure. One such function is `sprintf`.\n\nThe `sprintf` function is used to write formatted data to a string. However, it does not check the size of the destination buffer, which can lead to buffer overflow if the source data is larger than the destination buffer.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, use safer alternatives that check the size of the destination buffer. In the case of `sprintf`, a safer alternative is `snprintf`, which takes an additional parameter specifying the size of the destination buffer.\n\n## Source Code Fix Recommendation\n\nReplace `sprintf` with `snprintf` as shown below:\n\n```cpp\n// Vulnerable code\nchar buffer[50];\nsprintf(buffer, \"%s\", some_large_string);\n\n// Fixed code\nchar buffer[50];\nsnprintf(buffer, sizeof(buffer), \"%s\", some_large_string);\n```\n\n## Library Dependencies\n\nThe code example requires the C standard library (`<cstdio>` or `<stdio.h>` in C++).\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-af84fb0c-6358-4ae3-b3d1-1063a6e2ad24",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Prohibited C Function Identified\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflow, leading to arbitrary code execution, denial of service, or information disclosure. One such function is `sprintf`.\n\nThe `sprintf` function is used to write formatted data to a string. However, it does not check the size of the destination buffer, which can lead to buffer overflow if the source data is larger than the destination buffer.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, use safer alternatives that check the size of the destination buffer. In the case of `sprintf`, a safer alternative is `snprintf`, which takes an additional parameter specifying the size of the destination buffer.\n\n## Source Code Fix Recommendation\n\nReplace `sprintf` with `snprintf` as shown below:\n\n```cpp\n// Vulnerable code\nchar buffer[50];\nsprintf(buffer, \"%s\", some_large_string);\n\n// Fixed code\nchar buffer[50];\nsnprintf(buffer, sizeof(buffer), \"%s\", some_large_string);\n```\n\n## Library Dependencies\n\nThe code example requires the C standard library (`<cstdio>` or `<stdio.h>` in C++).\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-187ed795-2843-42cf-b6c6-ce4b532b97b5",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Prohibited C Function Identified\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflow, leading to arbitrary code execution, denial of service, or information disclosure. One such function is `sprintf`.\n\nThe `sprintf` function is used to write formatted data to a string. However, it does not check the size of the destination buffer, which can lead to buffer overflow if the source data is larger than the destination buffer.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, use safer alternatives that check the size of the destination buffer. In the case of `sprintf`, a safer alternative is `snprintf`, which takes an additional parameter specifying the size of the destination buffer.\n\n## Source Code Fix Recommendation\n\nReplace `sprintf` with `snprintf` as shown below:\n\n```cpp\n// Vulnerable code\nchar buffer[50];\nsprintf(buffer, \"%s\", some_large_string);\n\n// Fixed code\nchar buffer[50];\nsnprintf(buffer, sizeof(buffer), \"%s\", some_large_string);\n```\n\n## Library Dependencies\n\nThe code example requires the C standard library (`<cstdio>` or `<stdio.h>` in C++).\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-d7307270-9e17-43f5-9744-a8eb176ec11e",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Prohibited C Function Identified\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflow, leading to arbitrary code execution, denial of service, or information disclosure. One such function is `sprintf`.\n\nThe `sprintf` function is used to write formatted data to a string. However, it does not check the size of the destination buffer, which can lead to buffer overflow if the source data is larger than the destination buffer.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, use safer alternatives that check the size of the destination buffer. In the case of `sprintf`, a safer alternative is `snprintf`, which takes an additional parameter specifying the size of the destination buffer.\n\n## Source Code Fix Recommendation\n\nReplace `sprintf` with `snprintf` as shown below:\n\n```cpp\n// Vulnerable code\nchar buffer[50];\nsprintf(buffer, \"%s\", some_large_string);\n\n// Fixed code\nchar buffer[50];\nsnprintf(buffer, sizeof(buffer), \"%s\", some_large_string);\n```\n\n## Library Dependencies\n\nThe code example requires the C standard library (`<cstdio>` or `<stdio.h>` in C++).\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-5415d0a1-81b1-4913-8c32-ce2d1b2d59ed",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Prohibited C Function Identified\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflow, leading to arbitrary code execution, denial of service, or information disclosure. One such function is `sprintf`.\n\nThe `sprintf` function is used to write formatted data to a string. However, it does not check the size of the destination buffer, which can lead to buffer overflow if the source data is larger than the destination buffer.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, use safer alternatives that check the size of the destination buffer. In the case of `sprintf`, a safer alternative is `snprintf`, which takes an additional parameter specifying the size of the destination buffer.\n\n## Source Code Fix Recommendation\n\nReplace `sprintf` with `snprintf` as shown below:\n\n```cpp\n// Vulnerable code\nchar buffer[50];\nsprintf(buffer, \"%s\", some_large_string);\n\n// Fixed code\nchar buffer[50];\nsnprintf(buffer, sizeof(buffer), \"%s\", some_large_string);\n```\n\n## Library Dependencies\n\nThe code example requires the C standard library (`<cstdio>` or `<stdio.h>` in C++).\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            },
+            {
+              "id": "glog-e477c71c-1614-47cb-8a95-a987a93739c1",
+              "help": {
+                "text": "",
+                "markdown": "## Description\n\nThe \"Prohibited C Function Identified\" vulnerability in C++ programming language refers to the use of certain C standard library functions that are known to be dangerous due to their potential to cause buffer overflow, leading to arbitrary code execution, denial of service, or information disclosure. One such function is `sprintf`.\n\nThe `sprintf` function is used to write formatted data to a string. However, it does not check the size of the destination buffer, which can lead to buffer overflow if the source data is larger than the destination buffer.\n\n## Mitigation Advice\n\nTo mitigate this vulnerability, use safer alternatives that check the size of the destination buffer. In the case of `sprintf`, a safer alternative is `snprintf`, which takes an additional parameter specifying the size of the destination buffer.\n\n## Source Code Fix Recommendation\n\nReplace `sprintf` with `snprintf` as shown below:\n\n```cpp\n// Vulnerable code\nchar buffer[50];\nsprintf(buffer, \"%s\", some_large_string);\n\n// Fixed code\nchar buffer[50];\nsnprintf(buffer, sizeof(buffer), \"%s\", some_large_string);\n```\n\n## Library Dependencies\n\nThe code example requires the C standard library (`<cstdio>` or `<stdio.h>` in C++).\n\n## References\n\n- [OWASP C++ Secure Coding Practices](https://cheatsheetseries.owasp.org/cheatsheets/C-Based_Toolchain_Hardening_Cheat_Sheet.html)"
+              },
+              "properties": {
+                "tags": [
+                  "DS154189"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-8d4df7c8-545f-4ef1-ba23-5f41472b37bf",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/create_target_DPUCZDX8G_ISA1.cpp"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 2,
+                  "endLine": 61,
+                  "endColumn": 9,
+                  "charOffset": 2321,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "sprintf",
+                    "rendered": {
+                      "text": "sprintf",
+                      "markdown": "`sprintf`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-af84fb0c-6358-4ae3-b3d1-1063a6e2ad24",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/create_target_DPUCVDX8G_ISA3.cpp"
+                },
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 2,
+                  "endLine": 66,
+                  "endColumn": 9,
+                  "charOffset": 2505,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "sprintf",
+                    "rendered": {
+                      "text": "sprintf",
+                      "markdown": "`sprintf`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-187ed795-2843-42cf-b6c6-ce4b532b97b5",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/create_target_DPUCV2DX8G_ISA0.cpp"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 2,
+                  "endLine": 60,
+                  "endColumn": 9,
+                  "charOffset": 2049,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "sprintf",
+                    "rendered": {
+                      "text": "sprintf",
+                      "markdown": "`sprintf`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-d7307270-9e17-43f5-9744-a8eb176ec11e",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/create_target_DPUCV2DX8G_ISA1.cpp"
+                },
+                "region": {
+                  "startLine": 60,
+                  "startColumn": 2,
+                  "endLine": 60,
+                  "endColumn": 9,
+                  "charOffset": 2049,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "sprintf",
+                    "rendered": {
+                      "text": "sprintf",
+                      "markdown": "`sprintf`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-5415d0a1-81b1-4913-8c32-ce2d1b2d59ed",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/create_target_DPUCVDX8G_ISA2.cpp"
+                },
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 2,
+                  "endLine": 64,
+                  "endColumn": 9,
+                  "charOffset": 2469,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "sprintf",
+                    "rendered": {
+                      "text": "sprintf",
+                      "markdown": "`sprintf`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-e477c71c-1614-47cb-8a95-a987a93739c1",
+          "kind": "fail",
+          "level": "warning",
+          "message": {
+            "text": "Banned C function detected"
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/create_target_v2.cpp"
+                },
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 2,
+                  "endLine": 61,
+                  "endColumn": 9,
+                  "charOffset": 2312,
+                  "charLength": 7,
+                  "snippet": {
+                    "text": "sprintf",
+                    "rendered": {
+                      "text": "sprintf",
+                      "markdown": "`sprintf`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.BannedFunction"
+            ]
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
